@@ -32,7 +32,8 @@ class Dice extends Component {
         }, 2000)
     }
     render(){
-        let shakeDice = this.state.isRolling ? "dice-roll-dice" : ""
+        let shakeDice = this.state.isRolling ? "dice-roll-dice" : "";
+        let rollButtonText = this.state.isRolling ? "Rolling..." : "Roll Dice";
         let dice1Class = `${shakeDice} dice-icon fa fa-solid fa-dice-${this.state.dice1} fa-flip-horizontal fa-8x`
         let dice2Class = `${shakeDice} dice-icon fa fa-solid fa-dice-${this.state.dice2} fa-flip-horizontal fa-8x`
         return(
@@ -40,7 +41,7 @@ class Dice extends Component {
                 <i class={dice1Class}></i>
                 <i class={dice2Class}></i>
                 <div>
-                    <button className='dice-roll-button' onClick={this.rollDice}>Roll Dice!</button>
+                    <button className='dice-roll-button' onClick={this.rollDice}>{rollButtonText}</button>
                 </div>
             </div>
             
