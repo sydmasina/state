@@ -1,0 +1,31 @@
+.dice-icon {
+    padding: 10px;
+    color: blue;
+    /* margin: 10px; */
+}
+
+.dice-roll-dice{
+    animation: dice-roll-dice 0.15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dice-roll-dice {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+
+.dice-roll-button{
+    background-color: black; /* Green */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
