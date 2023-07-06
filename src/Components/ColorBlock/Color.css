@@ -1,0 +1,13 @@
+.color-div{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.colorBlocker-wrapper {
+    margin-right: auto; /* 1 */
+    margin-left: auto; /* 1 */
+    max-width:1160px; /* 2 */
+    padding-right: 0px; /* 3 */
+    padding-left: 0px; /* 3 */
+}
